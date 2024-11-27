@@ -1,0 +1,15 @@
+{
+    "exp_name":"coco_clip_vit_l14_fft",
+    "data_name":"MS-COCO",
+    "data_file":"dataset_coco.json",
+    "num_txts_per_img":5,
+    "batch_size":64,
+    "shuffle":true,
+    "device":"cuda:0",
+    "clip_name":"ViT-L/14",
+    "lr":1e-8,
+    "num_epochs":4,
+    "k_candidates":0,
+    "grad_clip":2.0,
+    "seed":1
+}
