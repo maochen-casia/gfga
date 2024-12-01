@@ -53,7 +53,7 @@ In addition, you can download `dataset_coco.json` from the [link](http://cs.stan
 
 Since GFGA is built upon CLIP, you may need to fine-tune CLIP first on the corresponding dataset. You can use different configurations to fine-tune CLIP on different datasets. 
 
-To fine-tune CLIP on the flickr30k dataset:
+To fine-tune CLIP on the Flickr30k dataset:
 
 ```
 python train_clip.py --config_file=./configs/flickr30k_clip_config.json
@@ -69,11 +69,7 @@ python train_clip.py --config_file=./configs/coco_clip_config.json
 
 After complete fine-tuning CLIP, you can use the following command to train GFGA on two datasets.
 
-To train GFGA on the flickr30k dataset:
-
-```
-python train_gfga.py --config_file=./configs/flickr30k_gfga_config.json
-```
+Since the weights of GFGA trained on the MS-COCO dataset would be used to initialize GFGA on the Flickr30k dataset, you may need to train GFGA on the MS-COCO dataset before the Flickr30k dataset.
 
 To train GFGA on the MS-COCO dataset:
 
@@ -81,3 +77,8 @@ To train GFGA on the MS-COCO dataset:
 python train_gfga.py --config_file=./configs/coco_gfga_config.json
 ```
 
+To train GFGA on the Flickr30k dataset:
+
+```
+python train_gfga.py --config_file=./configs/flickr30k_gfga_config.json
+```
