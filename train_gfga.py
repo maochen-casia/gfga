@@ -127,7 +127,6 @@ def validate(wrapper, dataloader, k_candidates):
     img_to_txt_r1, img_to_txt_r5, img_to_txt_r10, img_to_txt_medr, img_to_txt_meanr, \
     txt_to_img_r1, txt_to_img_r5, txt_to_img_r10, txt_to_img_medr, txt_to_img_meanr = eval_rank(sim)
     
-    # sum of recalls to be used for early stopping
     rsum =  img_to_txt_r1 + img_to_txt_r5 + img_to_txt_r10 + txt_to_img_r1 + txt_to_img_r5 + txt_to_img_r10
 
     return img_to_txt_r1, img_to_txt_r5, img_to_txt_r10, img_to_txt_medr, img_to_txt_meanr, \

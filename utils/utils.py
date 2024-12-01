@@ -10,16 +10,8 @@ import random
 class ImgTxtDataset(Dataset):
 
     def __init__(self, images, texts, transform):
-        """
-            Args:
-                imgs: a list of image paths with size N.
-                txts: a list of texts with size M.
-                txt_lens: a tensor of text lengths, in shape (M).
-                num_txts_per_img: int, the number of texts for one image.
-                
-        """
-        super(ImgTxtDataset, self).__init__()
 
+        super(ImgTxtDataset, self).__init__()
 
         self.transform = transform
         self.images = images
