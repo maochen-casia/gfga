@@ -18,23 +18,35 @@ Two benchmark datasets, Flickr30k and MS-COCO, are used in our experiment.
 
 ### 2.1 Flickr30k Dataset
 
-You can download images of the Flickr30k dataset from the [flickr30k dataset website](https://shannon.cs.illinois.edu/DenotationGraph/).
+You can download images of the Flickr30k dataset from the [Flickr30k dataset website](https://shannon.cs.illinois.edu/DenotationGraph/).
 
 After downloading the images, please place them as:
 
 ```
-GFGA/data/flickr30k/images/xxx.jpg
+./data/flickr30k/images/xxx.jpg
+```
+
+In addition, you can download `dataset_flickr30k.json` from the [link](http://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip) and place it as:
+
+```
+./data/flickr30k/dataset_flickr30k.json
 ```
 
 ### 2.2 MS-COCO Dataset
 
-You can download images of the MS-COCO dataset from [COCO website](https://cocodataset.org/#download). Specifically, the images we used are 2014 Train images and 2014 Val Images, following the protocol of previous works. 
+You can download images of the MS-COCO dataset from the [COCO website](https://cocodataset.org/#download). Specifically, the images we used are 2014 Train images and 2014 Val Images, following the protocol of previous works. 
 
 After downloading the images, please place them as as:
 
 ```
-GFGA/data/MS-COCO/train2014/xxx.jpg
-GFGA/data/MS-COCO/val2014/xxx.jpg
+./data/MS-COCO/train2014/xxx.jpg
+./data/MS-COCO/val2014/xxx.jpg
+```
+
+In addition, you can download `dataset_coco.json` from the [link](http://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip) and place it as:
+
+```
+./data/MS-COCO/dataset_coco.json
 ```
 
 ## 3. Fine-tune CLIP

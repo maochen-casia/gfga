@@ -83,7 +83,7 @@ def get_dataloaders(data_dir, data_file, transform, batch_size):
 def get_logger(exp_name):
     logger = logging.getLogger()
     logger.setLevel(level=logging.INFO)
-    log_file = './checkpoints/%s/Graeme.log' %(exp_name)
+    log_file = './checkpoints/%s/gfga.log' %(exp_name)
     handler = logging.FileHandler(log_file, mode='a')
     handler.setLevel(logging.INFO)
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')

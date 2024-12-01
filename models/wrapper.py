@@ -81,9 +81,9 @@ class Wrapper(object):
         _, i2t_index = torch.max(sim_matrix, dim=-1)
         _, t2i_index = torch.max(sim_matrix, dim=0)
 
-        pos_sim = self.model(img_global_emb, image_features, txt_global_emb, text_features, text_lengths, True)
-        i2t_sim = self.model(img_global_emb, image_features, txt_global_emb[i2t_index], text_features[i2t_index], text_lengths[i2t_index], False)
-        t2i_sim = self.model(img_global_emb[t2i_index], image_features[t2i_index], txt_global_emb, text_features, text_lengths, False)
+        pos_sim = self.model(img_global_emb, image_features, txt_global_emb, text_features, text_lengths)
+        i2t_sim = self.model(img_global_emb, image_features, txt_global_emb[i2t_index], text_features[i2t_index], text_lengths[i2t_index])
+        t2i_sim = self.model(img_global_emb[t2i_index], image_features[t2i_index], txt_global_emb, text_features, text_lengths)
 
         sim_matrix[torch.arange(batch_size), torch.arange(batch_size)] = pos_sim
         sim_matrix[torch.arange(batch_size), i2t_index] = i2t_sim
