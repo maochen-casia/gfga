@@ -1,4 +1,4 @@
-# Graph Learning-based Fine-Grained Multimodal Alignment for Image-Text Retrieval
+# Fine-Grained Multimodal Alignment for Image-Text Retrieval via Graph Learning
 
 ![GFGA](./figs/gfga.png)
 
