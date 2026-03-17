@@ -62,6 +62,9 @@ Organize the downloaded files as follows:
 └── dataset_coco.json
 ```
 
+### 2.3 Checkpoint Download (Optional)
+You can download the checkpoints of our fine-tuned CLIP and GFGA from the [hugging face](https://huggingface.co/maochen-casia/gfga/) and place them under `checkpoints/`.
+
 ---
 
 ## 3. Fine-tune CLIP
